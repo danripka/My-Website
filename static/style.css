@@ -1,0 +1,133 @@
+html {
+  overflow-y: scroll;
+}
+
+* {
+  font-family: sans-serif, monospace;
+}
+
+.light-theme {
+  color-scheme: light;
+}
+
+.dark-theme {
+  color-scheme: dark;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  margin: 10px auto 200px;
+  width: 700px;
+  font-family: serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+hr.divider {
+  border: none;
+  margin: 12px 0px;
+  height: 1px;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+header {
+  font-size: 24px;
+  line-height: 30px;
+}
+header > nav {
+  display: flex;
+  gap: 10px; /* Space between nav items */
+  float: right;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+footer {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 30px;
+}
+footer > nav {
+  text-align: center;
+}
+
+.image-centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+  margin: 24px 0;
+}
+h2 {
+  font-size: 36px;
+  line-height: 36px;
+  margin: 24px 0;
+}
+h3 {
+  font-size: 30px;
+  line-height: 36px;
+  margin: 24px 0;
+}
+h4 {
+  font-size: 24px;
+  line-height: 36px;
+  margin: 24px 0;
+}
+
+/* Mobile styles */
+@media (max-width: 700px) {
+  body {
+    width: 90%;
+    margin: 10px; /* Reduce margins for smaller screens */
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  header {
+    font-size: 20px; /* Smaller header font size */
+  }
+
+  header > nav {
+    font-size: 16px; /* Smaller nav font size */
+  }
+
+  footer {
+    font-size: 12px; /* Smaller footer font size */
+  }
+
+  .image-centered {
+    width: 100%; /* Full width for images */
+  }
+
+  h1 {
+    font-size: 32px; /* Smaller heading sizes */
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+}
