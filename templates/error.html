@@ -1,33 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html class="dark-theme" lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../static/style.css" rel="stylesheet" type="text/css" />
+    <title>{{error_code}} Error</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{url_for('static',filename='../static/images/favicon.ico')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='../static/style.css')}}"
+    />
   </head>
   <body>
     <header>
       Dan Ripka
       <nav>
-        <a href="{{url_for('index')}}">Home</a>
-        -
-        <a href="{{url_for('about')}}">About</a>
-        -
-        <a href="{{url_for('projects')}}">Projects</a>
+        <a href="{{url_for('index')}}">Home</a>-
+        <a href="{{url_for('projects')}}">Projects</a>-
+        <a href="{{url_for('about')}}">About</a>-
+        <a href="{{url_for('contact')}}">Contact</a>
       </nav>
     </header>
     <hr class="divider" />
-    <content>
-      <h2>{{code}} Error</h2>
-      {{description}}
-    </content>
+    <main>
+      <h4>{{error_code}} Error</h4>
+      {{error_name}}
+      <br />
+      <br />
+    </main>
     <hr class="divider" />
     <footer>
       <nav>
-        <a href="https://www.linkedin.com/in/dan-ripka">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/dan-ripka" target="_blank"
+          >LinkedIn</a
+        >
         &ensp;|&ensp;
-        <a href="https://twitter.com/DanRipka">X</a>
+        <a href="https://x.com/DanRipka" target="_blank">X</a>
         &ensp;|&ensp;
-        <a href="https://github.com/danripka">Github</a>
+        <a href="https://github.com/danripka" target="_blank">Github</a>
       </nav>
     </footer>
   </body>
