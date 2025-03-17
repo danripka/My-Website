@@ -21,7 +21,7 @@ def about():
 
 @app.route("/resume")
 def resume():
-    return flask.send_file("documents\\resume.pdf", as_attachment=False)
+    return flask.send_file("documents/resume.pdf", as_attachment=False)
 
 
 @app.route("/contact")
