@@ -41,7 +41,7 @@ header {
 }
 header > nav {
   display: flex;
-  gap: 10px; /* Space between nav items */
+  gap: 15px; /* Space between nav items */
   float: right;
   line-height: 30px;
   font-size: 18px;
@@ -50,10 +50,11 @@ header > nav {
 footer {
   line-height: 30px;
   font-size: 14px;
+  font-style: italic;
 }
 footer > nav {
   display: flex;
-  gap: 10px; /* Space between nav items */
+  gap: 15px; /* Space between nav items */
   justify-content: center;
 }
 
@@ -123,9 +124,6 @@ li {
   }
   footer > nav > a {
     padding: 5px;
-  }
-  .centered-image {
-    width: 100%;
   }
   h1 {
     font-size: 32px;
