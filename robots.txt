@@ -3,4 +3,4 @@ Disallow: /static/
 Disallow: /documents/
 Allow: /
 
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://danripka.com/sitemap.xml
