@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <html class="dark-theme" lang="en">
 
 <head>
@@ -7,8 +8,10 @@
   <meta name="description" content="Dan Ripka, Home" />
   <meta name="keywords" content="Dan Ripka, Daniel Ripka, Personal Website Home" />
   <title>Dan Ripka - Home</title>
-  <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
-  <link rel="stylesheet" href="/static/style.css" />
+  <link rel="icon" type="image/x-icon" href="static/css/images/favicon.ico" />
+  <link rel="stylesheet" href="static/css/index.css" />
+  <script src="components/header.js" type="text/javascript" defer></script>
+  <script src="components/footer.js" type="text/javascript" defer></script>
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -22,30 +25,14 @@
 </script>
 
 <body>
-  <header>
-    Dan Ripka
-    <nav>
-      <a href="/">Home</a>
-      <a href="/projects">Projects</a>
-      <a href="/about">About</a>
-      <a href="/contact">Contact</a>
-    </nav>
-  </header>
-  <hr class="divider" />
+  <header-component></header-component>
   <main>
     <h4>Home</h4>
     Coming soon
     <br />
     <br />
   </main>
-  <hr class="divider" />
-  <footer>
-    <nav>
-      <a href="https://www.linkedin.com/in/dan-ripka" target="_blank">LinkedIn</a>
-      <a href="https://x.com/DanRipka" target="_blank">X</a>
-      <a href="https://github.com/danripka" target="_blank">Github</a>
-    </nav>
-  </footer>
+  <footer-component></footer-component>
 </body>
 
 </html>

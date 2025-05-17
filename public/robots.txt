@@ -1,6 +1,7 @@
 User-agent: *
-Disallow: /static/
+Disallow: /components/
 Disallow: /documents/
+Disallow: /static/
 Allow: /
 
 Sitemap: https://danripka.com/sitemap.xml
