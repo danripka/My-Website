@@ -5,7 +5,7 @@
 
 body {
   margin: 1rem auto;
-  max-width: 700px;
+  max-width: 800px;
   padding-bottom: 5rem;
   line-height: 24px;
   font-size: 18px;
@@ -20,11 +20,20 @@ hr.divider {
 header {
   line-height: 30px;
   font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+header .site-title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 36px;
+}
+
 header > nav {
   display: flex;
   gap: 15px; /* Space between nav items */
-  float: right;
   line-height: 30px;
   font-size: 18px;
 }
@@ -34,6 +43,7 @@ footer {
   font-size: 14px;
   font-style: italic;
 }
+
 footer > nav {
   display: flex;
   gap: 15px; /* Space between nav items */
@@ -83,8 +93,11 @@ li {
     display: block;
     text-align: center;
   }
+  header .site-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
   header > nav {
-    float: none;
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -129,6 +142,10 @@ li {
   }
   header {
     font-size: 20px;
+  }
+  header .site-title {
+    font-size: 20px;
+    line-height: 24px;
   }
   header > nav {
     font-size: 14px;

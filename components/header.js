@@ -6,9 +6,12 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
         <header>
-            Dan Ripka
+            <h3 class="site-title">Dan Ripka</h3>
             <nav>
                 <a href="/">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </nav>
         </header>
         <hr class="divider" />
